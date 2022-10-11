@@ -1,0 +1,175 @@
+/* Font Fixer on chrome */
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+/* Font Fixer on chrome */
+
+/*Meyer Reset */
+
+*{
+    margin: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Meyer Reset */
+
+
+
+:root{
+    --maximum-green : #61892f;
+    --dark-gunmetal : #222629;
+    --dark-blue: #2F2FA2;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+body{
+    background-color:var(--dark-gunmetal);
+}
+
+.header-bar{
+    width: 100%;
+    justify-content:center;
+    display:flex;
+    padding: 20px 0px 20px 0px;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+
+.material-symbols-outlined{
+    vertical-align: -3px;
+}
+
+.header-bar > span{
+    color: var(--maximum-green);
+}
+
+.header-bar > span,
+.header-bar {
+    font-size: min(15vw,70px);
+}
+
+.mid-page{
+    display:flex;
+    height:85vh;
+    padding-top:20px;
+}
+
+.lists-bar{
+    opacity:0.8;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    color:white;
+    border-right: 3px solid var(--maximum-green);
+    padding-right: min(5vw,150px);
+    padding-left: 20px;
+
+}
+
+.lists-bar-title,
+ .lists-bar-title > span{
+    font-size: min(10vw,40px);
+}
+
+.lists{
+    font-size: min(7vw,30px);
+    margin-left: min(10vw,20px);
+    margin-top: 40px;
+}
+
+.lists > ul > li{
+    margin-top: 15px;
+    display:flex;
+    align-items:center;
+}
+
+.lists > ul > li::before{
+    font-family: "Material Icons";
+    content: "\E896 \00a0";
+    vertical-align: -3px;
+}
+
+.task-numbers{
+    height: min(3.5vw,15px);
+    width: min(3.5vw,15px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid var(--maximum-green);
+    background-color: var(--maximum-green);
+    border-radius: 50%;
+    font-size: min(6vw,20px);
+    margin-left: 5px;
+}
+
+.add-list::before{
+    font-family: "Material Icons";
+    content: "\E145 \00a0";
+    margin-top:2px;
+}
+
+.add-list{
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+}
