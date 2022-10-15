@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-   <script src="main.js"></script>  
    <div class="content">
     <div class="header-bar">
         Waraya
@@ -32,14 +32,21 @@
             </div>
             <div class="lists">
                 <ul>
-                    <li>Default<div class="task-numbers">5</div></li> 
-                    <li>University<div class="task-numbers">5</div></li>
-                    <li>Health<div class="task-numbers">5</div></li>
                 </ul>
                 <div class="add-list">Add a List</div>
+                <div class="add-list-form invisible">
+                    <input id = "list-name-input" type="text" name = "listName" placeholder = "List name...    ">
+                    <div class="add-list-buttons">
+                        <button>Add</button>
+                        <button>Cancel</button>
+                    </div>
+                </div>
+                <div class="add-list-error">
+                </div>
             </div>
         </div>
     </div>
    </div>
+   <script src="main.js"></script>  
 </body>
 </html>

@@ -115,32 +115,35 @@ body{
 }
 
 .lists-bar{
+    width: min(30vw,200px);
     opacity:0.8;
     display:flex;
     flex-direction:column;
     height:100%;
     color:white;
     border-right: 3px solid var(--maximum-green);
-    padding-right: min(5vw,150px);
-    padding-left: 20px;
+    padding-right: min(6vw, 60px);
+    padding-left: min(2.5vw,20px);
 
+}
+
+
+.lists-bar-title{
+    margin-bottom: min(5vh,50px);
 }
 
 .lists-bar-title,
  .lists-bar-title > span{
-    font-size: min(10vw,40px);
+    font-size: min(6vw,40px);
 }
 
 .lists{
-    font-size: min(7vw,30px);
-    margin-left: min(10vw,20px);
-    margin-top: 40px;
+    font-size: min(4vw,30px);
 }
 
 .lists > ul > li{
-    margin-top: 15px;
-    display:flex;
-    align-items:center;
+    margin-bottom: min(1vh,25px);
+    cursor:pointer;
 }
 
 .lists > ul > li::before{
@@ -150,6 +153,7 @@ body{
 }
 
 .task-numbers{
+    color:white;
     height: min(3.5vw,15px);
     width: min(3.5vw,15px);
     display:flex;
@@ -158,7 +162,7 @@ body{
     border: 6px solid var(--maximum-green);
     background-color: var(--maximum-green);
     border-radius: 50%;
-    font-size: min(6vw,20px);
+    font-size: min(4vw,20px);
     margin-left: 5px;
 }
 
@@ -172,4 +176,98 @@ body{
     margin-top:30px;
     display:flex;
     align-items:center;
+    cursor:pointer;
+}
+
+.add-list:hover,
+.lists > ul > li:hover{
+    background-color : rgba(128,128,128,0.5);
+}
+
+.add-list-form{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#list-name-input{
+    margin-top:10px;
+    border-radius: min(2vw,8px);
+    height: min(2.5vh,25px);
+    width : min(25vw,150px);
+    font-size: 13px;
+}   
+
+.add-list-buttons > button{
+    width: min(12vw,80px);
+    height: 30px;
+    font-size: min(3vw,16px);
+    color:white;
+    cursor:pointer;
+}
+
+.add-list-buttons{
+    display:flex;
+    width:100%;
+    margin-top:15px;
+    justify-content: space-around;
+}
+
+.add-list-buttons :nth-child(1){
+    background-color: rgb(16, 190, 16);
+    border: 2px solid rgb(16, 190, 16);
+    border-radius: 5px;
+}
+
+.add-list-buttons :nth-child(2){
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.invisible{
+    display:none;
+}
+
+.add-list-error{
+    color: red;
+    font-size: min(7vw,20px);
+}
+
+.active-list{
+    color:var(--maximum-green);
+}
+
+.delete-button{
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:  min(4vw,16px);
+    opacity: 0.5;
+    margin-left : auto;
+    cursor:pointer;
+}
+
+.delete-button:hover{
+    color:red;
+}
+
+.delete-button::before{
+    content : "\00a0 \00a0";
+}
+
+
+ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+li{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
 }
