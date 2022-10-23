@@ -124,6 +124,12 @@ const addList = (name) => {
     updateListOfLists(listOfLists);
     hideAddForm();
     loadLists();
+    const newItemDiv = listOfListsDiv.children[listOfListsDiv.children.length - 1];
+    for(var i = 0; i < listOfLists.length; i++){
+        if(name == listOfLists[i].name){
+            makeListItemActive(listItem, newItemDiv);
+        }
+    }
 }
 
 
